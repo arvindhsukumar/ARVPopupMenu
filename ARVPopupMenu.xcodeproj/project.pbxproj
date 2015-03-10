@@ -13,6 +13,10 @@
 		D48166291AAC212E0089700F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48166281AAC212E0089700F /* Images.xcassets */; };
 		D481662C1AAC212E0089700F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D481662A1AAC212E0089700F /* LaunchScreen.xib */; };
 		D48166381AAC212E0089700F /* ARVPopupMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48166371AAC212E0089700F /* ARVPopupMenuTests.swift */; };
+		D48166431AAC21AE0089700F /* ARVPopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48166421AAC21AE0089700F /* ARVPopupMenu.swift */; };
+		D48166451AAC223F0089700F /* ARVPopupMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48166441AAC223F0089700F /* ARVPopupMenuItem.swift */; };
+		D48166571AAD7B8E0089700F /* ARVPopupMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48166551AAD7B8E0089700F /* ARVPopupMenuCell.swift */; };
+		D48166581AAD7B8E0089700F /* ARVPopupMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48166561AAD7B8E0089700F /* ARVPopupMenuCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		D48166311AAC212E0089700F /* ARVPopupMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARVPopupMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48166361AAC212E0089700F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D48166371AAC212E0089700F /* ARVPopupMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVPopupMenuTests.swift; sourceTree = "<group>"; };
+		D48166421AAC21AE0089700F /* ARVPopupMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARVPopupMenu.swift; sourceTree = "<group>"; };
+		D48166441AAC223F0089700F /* ARVPopupMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARVPopupMenuItem.swift; sourceTree = "<group>"; };
+		D48166551AAD7B8E0089700F /* ARVPopupMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARVPopupMenuCell.swift; sourceTree = "<group>"; };
+		D48166561AAD7B8E0089700F /* ARVPopupMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARVPopupMenuCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		D481661E1AAC212E0089700F /* ARVPopupMenu */ = {
 			isa = PBXGroup;
 			children = (
+				D48166411AAC21340089700F /* Classes */,
 				D48166211AAC212E0089700F /* AppDelegate.swift */,
 				D48166231AAC212E0089700F /* ViewController.swift */,
 				D48166251AAC212E0089700F /* Main.storyboard */,
@@ -110,6 +119,17 @@
 				D48166361AAC212E0089700F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D48166411AAC21340089700F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D48166421AAC21AE0089700F /* ARVPopupMenu.swift */,
+				D48166441AAC223F0089700F /* ARVPopupMenuItem.swift */,
+				D48166551AAD7B8E0089700F /* ARVPopupMenuCell.swift */,
+				D48166561AAD7B8E0089700F /* ARVPopupMenuCell.xib */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +215,7 @@
 				D48166271AAC212E0089700F /* Main.storyboard in Resources */,
 				D481662C1AAC212E0089700F /* LaunchScreen.xib in Resources */,
 				D48166291AAC212E0089700F /* Images.xcassets in Resources */,
+				D48166581AAD7B8E0089700F /* ARVPopupMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D48166241AAC212E0089700F /* ViewController.swift in Sources */,
+				D48166571AAD7B8E0089700F /* ARVPopupMenuCell.swift in Sources */,
 				D48166221AAC212E0089700F /* AppDelegate.swift in Sources */,
+				D48166451AAC223F0089700F /* ARVPopupMenuItem.swift in Sources */,
+				D48166431AAC21AE0089700F /* ARVPopupMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +429,7 @@
 				D481663D1AAC212E0089700F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D481663E1AAC212E0089700F /* Build configuration list for PBXNativeTarget "ARVPopupMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +438,7 @@
 				D48166401AAC212E0089700F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
